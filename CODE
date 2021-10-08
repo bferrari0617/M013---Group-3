@@ -1,1 +1,24 @@
 # Code file
+def encode(p1: str) -> str:
+    code = ""
+    count = 0
+    for char in p1:
+        if p1 == "a":
+            code += "10101"
+        if p1 == "b":
+            code += "0010101"
+        if p1 == "c":
+            code += "0010110"
+
+        if p1 == "A":
+            code += "10000"
+        if p1 == "B":
+            code += "0000000"
+        if p1 == "C":
+            code += "0000001"
+
+        if p1 == ".":
+            code += "11110"
+        count = len(code)
+        print(str(count) + "." + code)
+encode("a")
