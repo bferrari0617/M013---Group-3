@@ -8,6 +8,52 @@ def encode(p1: str) -> str:
             code += "0010101"
         if char == "c":
             code += "0010110"
+        if char == "d":
+            code += "0010111"
+        if char == "e":
+            code += "10110"
+        if char == "f":
+            code += "0011000"
+        if char == "g":
+            code += "0011001"
+        if char == "h":
+            code += "10111"
+        if char == "i":
+            code += "11000"
+        if char == "j":
+            code += "0011010"
+        if char == "k":
+            code += "0011011"
+        if char == "l":
+            code += "0011100"
+        if char == "m":
+            code += "0011101"
+        if char == "n":
+            code += "11001"
+        if char == "o":
+            code += "11010"
+        if char == "p":
+            code += "0011110"
+        if char == "q":
+            code += "0011111"
+        if char == "r":
+            code += "11011"
+        if char == "s":
+            code += "11100"
+        if char == "t":
+            code += "11101"
+        if char == "u":
+            code += "0100000"
+        if char == "v":
+            code += "0100001"
+        if char == "w":
+            code += "0100010"
+        if char == "x":
+            code += "0100011"
+        if char == "y":
+            code += "0100100"
+        if char == "z":
+            code += "0100101"
 
         if char == "A":
             code += "10000"
