@@ -16,7 +16,7 @@ def encode(p1: str) -> list:
             code.append("0101001")
         # elif char == (""):
         #     code.append("0101010")
-        elif char == "/n":
+        elif char == "\n":
             code.append("0101011")
         if char.isupper():
             if char == "A":
