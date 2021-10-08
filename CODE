@@ -128,5 +128,6 @@ def encode(p1: str) -> str:
                 plist.append("0100101")
     for item in plist:
         str1 += item
-    print(str1)
-    return len(str1) + "." + str1
+    output = str(len(str1)) + "." + str1
+    print(output)
+    return output
