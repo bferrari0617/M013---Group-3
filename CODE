@@ -61,6 +61,52 @@ def encode(p1: str) -> str:
             code += "0000000"
         if char == "C":
             code += "0000001"
+        if char == "D":
+            code += "10001"
+        if char == "E":
+            code += "0000010"
+        if char == "F":
+            code += "0000011"
+        if char == "G":
+            code += "0000100"
+        if char == "H":
+            code += "0000101"
+        if char == "I":
+            code += "0000110"
+        if char == "J":
+            code += "0000111"
+        if char == "K":
+            code += "0001000"
+        if char == "L":
+            code += "0001001"
+        if char == "M":
+            code += "0001010"
+        if char == "N":
+            code += "0001011"
+        if char == "O":
+            code += "10010"
+        if char == "P":
+            code += "0001100"
+        if char == "Q":
+            code += "0001101"
+        if char == "R":
+            code += "0001110"
+        if char == "S":
+            code += "0001111"
+        if char == "T":
+            code += "10011"
+        if char == "U":
+            code += "0010000"
+        if char == "V":
+            code += "0010001"
+        if char == "W":
+            code += "10100"
+        if char == "X":
+            code += "0010010"
+        if char == "Y":
+            code += "0010011"
+        if char == "Z":
+            code += "0010100"
 
         if char == ".":
             code += "11110"
