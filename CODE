@@ -17,7 +17,7 @@ def encode(p1: str) -> str:
         elif char == "'":
             plist.append("0101001")
         # elif char == (""):
-        #     plist.append("0101010")
+        #   plist.append("0101010")
         elif char == "\n":
             plist.append("0101011")
         if char.isupper():
@@ -125,8 +125,8 @@ def encode(p1: str) -> str:
             elif char == "y":
                 plist.append("0100100")
             elif char == "z":
-                plist.append('0100101')
+                plist.append("0100101")
     for item in plist:
         str1 += item
     print(str1)
-    return str1
+    return len(str1) + "." + str1
