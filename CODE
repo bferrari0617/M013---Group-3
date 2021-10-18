@@ -131,3 +131,4 @@ def encode(p1: str) -> str:
     output = str(len(str1)) + "." + str1
     print(output)
     return output
+Hi
