@@ -1,134 +1,20 @@
-# Code file
-def encode(p1: str) -> str:
-    str1 = ''
-    plist = []
-    x = []
-    for char in p1:
-        if char == " ":
-            plist.append("11111")
-        elif char == ".":
-            plist.append("11110")
-        elif char == ",":
-            plist.append("0100110")
-        elif char == "-":
-            plist.append("0100111")
-        elif char == "!":
-            plist.append("0101000")
-        elif char == "'":
-            plist.append("0101001")
-        # elif char == (""):
-        #   plist.append("0101010")
-        elif char == "\n":
-            plist.append("0101011")
-        if char.isupper():
-            if char == "A":
-                plist.append("10000")
-            elif char == "B":
-                plist.append("0000000")
-            elif char == "C":
-                plist.append("0000001")
-            elif char == "D":
-                plist.append("10001")
-            elif char == "E":
-                plist.append("0000010")
-            elif char == "F":
-                plist.append("0000011")
-            elif char == "G":
-                plist.append("0000100")
-            elif char == "H":
-                plist.append("0000101")
-            elif char == "I":
-                plist.append("0000110")
-            elif char == "J":
-                plist.append("0000111")
-            elif char == "K":
-                plist.append("0001000")
-            elif char == "L":
-                plist.append("0001001")
-            elif char == "M":
-                plist.append("0001010")
-            elif char == "N":
-                plist.append("0001011")
-            elif char == "O":
-                plist.append("10010")
-            elif char == "P":
-                plist.append("0001100")
-            elif char == "Q":
-                plist.append("0001101")
-            elif char == "R":
-                plist.append("0001110")
-            elif char == "S":
-                plist.append("0001111")
-            elif char == "T":
-                plist.append("10011")
-            elif char == "U":
-                plist.append("0010000")
-            elif char == "V":
-                plist.append("0010001")
-            elif char == "W":
-                plist.append("10100")
-            elif char == "X":
-                plist.append("0010010")
-            elif char == "Y":
-                plist.append("0010011")
-            elif char == "Z":
-                plist.append("0010100")
-        elif char.islower():
-            if char == "a":
-                plist.append("00101")
-            elif char == "b":
-                plist.append("0010101")
-            elif char == "c":
-                plist.append("0010110")
-            elif char == "d":
-                plist.append("0010111")
-            elif char == "e":
-                plist.append("10110")
-            elif char == "f":
-                plist.append("0011000")
-            elif char == "g":
-                plist.append("0011001")
-            elif char == "h":
-                plist.append("10111")
-            elif char == "i":
-                plist.append("11000")
-            elif char == "j":
-                plist.append("0011010")
-            elif char == "k":
-                plist.append("0011011")
-            elif char == "l":
-                plist.append("0011100")
-            elif char == "m":
-                plist.append("0011101")
-            elif char == "n":
-                plist.append("11001")
-            elif char == "o":
-                plist.append("11010")
-            elif char == "p":
-                plist.append("0011110")
-            elif char == "q":
-                plist.append("0011111")
-            elif char == "r":
-                plist.append("11011")
-            elif char == "s":
-                plist.append("11100")
-            elif char == "t":
-                plist.append("11101")
-            elif char == "u":
-                plist.append("0100000")
-            elif char == "v":
-                plist.append("0100001")
-            elif char == "w":
-                plist.append("0100010")
-            elif char == "x":
-                plist.append("0100011")
-            elif char == "y":
-                plist.append("0100100")
-            elif char == "z":
-                plist.append("0100101")
-    for item in plist:
-        str1 += item
-    output = str(len(str1)) + "." + str1
-    print(output)
-    return output
-Hi
+my_file = open("whatever_name_of_your_file.txt")
+input = my_file.read()
+print(input)
+
+output = ""
+dict = {' ': '11111', '.': '11110', ',': '0100110', '-': '0100111', '!': '0101000', '\'': '0101001', '\"': '0101010',
+        '\n': '0101011', 'A': '10000', 'B': '0000000', 'C': '0000001', 'D': '10001', 'E': '0000010', 'F': '0000011',
+        'G': '0000100', 'H': '0000101', 'I': '0000110', 'J': '0000111', 'K': '0001000', 'L': '0001001', 'M': '0001010',
+        'N': '0001011', 'O': '10010', 'P': '0001100', 'Q': '0001101', 'R': '0001110', 'S': '0001111', 'T': '10011',
+        'U': '0010000', 'V': '0010001', 'W': '10100', 'X': '0010010', 'Y': '0010011', 'Z': '0010100', 'a': '00101',
+        'b': '0010101', 'c': '0010110', 'd': '0010111', 'e': '10110', 'f': '0011000', 'g': '0011001', 'h': '10111',
+        'i': '11000', 'j': '0011010', 'k': '0011011', 'l': '0011100', 'm': '0011101', 'n': '11001', 'o': '11010',
+        'p': '0011110', 'q': '0011111', 'r': '11011', 's': '11100', 't': '11101', 'u': '0100000', 'v': '0100001',
+        'w': '0100010', 'x': '0100011', 'y': '0100100', 'z': '0100101'}
+for i in range (0,len(input)):
+    output = output + (dict[input[i]])
+
+print(str(len(output)) + "." + output)
+my_file.close
+
