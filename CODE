@@ -1,4 +1,4 @@
-my_file = open("whatever_name_of_your_file.txt")
+my_file = open("readme.txt")
 input = my_file.read()
 print(input)
 
@@ -17,4 +17,5 @@ for i in range (0,len(input)):
 
 print(str(len(output)) + "." + output)
 my_file.close
-
+with open("decodeme.txt","w") as f:
+        f.write(output)
