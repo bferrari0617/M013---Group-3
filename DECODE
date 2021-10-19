@@ -1,15 +1,1 @@
 # Decode file
-# dictionary method
-# make a text file name it whatever you want and write any sentence you like in this example my text file is called "projectfile.txt"
-
-my_file = open("projectfile.txt")
-input = my_file.read()
-print(input)
-
-output = ""
-dict = {'I': '0000110', ' ': '11111', 'h': '10111', 'a': '10101', 'v': '0100001', 'e': '10110', 'p': '0011110', 'n': '11001', '.': '11110', '\"': '0101010', '\n': '0101011'}
-for i in range (0,len(input)):
-    output = output + (dict[input[i]])
-
-print(str(len(output)) + "." + output)
-my_file.close
