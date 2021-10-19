@@ -14,8 +14,9 @@ dict = {' ': '11111', '.': '11110', ',': '0100110', '-': '0100111', '!': '010100
         'w': '0100010', 'x': '0100011', 'y': '0100100', 'z': '0100101'}
 for i in range (0,len(input)):
     output = output + (dict[input[i]])
-
-print(str(len(output)) + "." + output)
-my_file.close
-with open("decodeme.txt","w") as f:
-        f.write(output)
+output1 = str(len(output)) + "." + output
+print(str(output1))
+my_file.close()
+with open("projectfile2.txt","w") as f:
+        f.write(output1)
+f.close()
