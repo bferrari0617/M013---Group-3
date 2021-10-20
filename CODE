@@ -1,4 +1,4 @@
-#Just run the program and type in the file name for your input file and output file.
+#Just run the program and type in the file name for your input file(file that contains the writing you want to translate) and output file(empty file for the result of binary numbers be pasted).
 inputfile_name = input("Enter a input file name: ")
 outputfile_name = input("Enter a output file name: ")
 my_file = open(inputfile_name)
