@@ -2,7 +2,7 @@ my_file = open("decodeme.txt")
 input = my_file.read()
 print(input)
 binary = str(input)
-binary = binary.lstrip(".")
+binary = binary.lstrip(binary[0:3])
 output = []
 output2 = ""
 dict = {'11111': ' ', '11110': '.', '0100110': ',', '0100111': '-', '0101000': '!', '0101001': '\'', '0101010': '\"',
