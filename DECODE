@@ -1,4 +1,7 @@
-my_file = open("decodeme.txt")
+#Just input the file name for input file(the file that the binary was pasted on) and output file(empty file that you want the binary number translate to writing to be pasted).
+inputfile_name = input("Enter a input file name: ")
+outputfile_name = input("Enter a output file name: ")
+my_file = open(inputfile_name)
 input = my_file.read()
 print(input)
 binary = str(input)
@@ -29,5 +32,5 @@ for i in output:
 print(output)
 print(output2)
 my_file.close()
-with open("decoded.txt", "w") as f:
+with open(outputfile_name, "w") as f:
     f.write(output2)
