@@ -1,6 +1,4 @@
-inputfile_name = input("Enter a input file name: ")
-outputfile_name = input("Enter a output file name: ")
-my_file = open(inputfile_name)
+my_file = open("readme.txt")
 input = my_file.read()
 print(input)
 
@@ -17,8 +15,8 @@ dict = {' ': '11111', '.': '11110', ',': '0100110', '-': '0100111', '!': '010100
 for i in range(0, len(input)):
     output = output + (dict[input[i]])
 
-final_output = str(len(output)) + "." + output
-print(final_output)
-my_file.close
-with open(outputfile_name,"w") as f:
-        f.write(final_output)
+print(str(len(output)) + "." + output)
+my_file.close()
+output = str(len(output)) + "." + output
+with open("decodeme.txt", "w") as f:
+        f.write(output)
