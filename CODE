@@ -1,3 +1,4 @@
+#Just run the program and type in the file name for your input file and output file.
 inputfile_name = input("Enter a input file name: ")
 outputfile_name = input("Enter a output file name: ")
 my_file = open(inputfile_name)
