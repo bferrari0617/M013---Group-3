@@ -1,3 +1,4 @@
+#In line 2 put in your file name that you wanted to read within open() followed by ".txt"
 my_file = open("readme.txt")
 input = my_file.read()
 print(input)
@@ -18,5 +19,6 @@ for i in range(0, len(input)):
 print(str(len(output)) + "." + output)
 my_file.close()
 output = str(len(output)) + "." + output
+#In line 23 put in the file name within open() followed by ".txt" so that the binary numbers of the text from your read file got pasted to this new empty file you created.
 with open("decodeme.txt", "w") as f:
         f.write(output)
